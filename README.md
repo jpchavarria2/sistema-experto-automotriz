@@ -6,12 +6,17 @@ Un sistema experto desarrollado en Python con interfaz gráfica en Tkinter y mot
 
 ## Tabla de contenidos
 
-- [Introducción](#introducción)  
-- [Características](#características)  
-- [Instalación](#instalación)  
-- [Uso](#uso)  
-- [Síntomas soportados](#síntomas-soportados)  
-- [Base de Conocimiento (Reglas)](#base-de-conocimientos)  
+- [Sistema Experto Automotriz](#sistema-experto-automotriz)
+  - [Tabla de contenidos](#tabla-de-contenidos)
+  - [Introducción](#introducción)
+  - [Características](#características)
+  - [Instalación](#instalación)
+  - [Uso](#uso)
+  - [Síntomas soportados](#síntomas-soportados)
+    - [Arranque y Eléctricos](#arranque-y-eléctricos)
+    - [Motor y Rendimiento](#motor-y-rendimiento)
+    - [Conducción y Frenos](#conducción-y-frenos)
+  - [Base de Conocimiento (Reglas)](#base-de-conocimiento-reglas)
 
 ---
 
@@ -34,15 +39,20 @@ El sistema utiliza reglas de inferencia CLIPS para generar un diagnóstico proba
 
 ## Instalación
 
-1.  **Clona el repositorio en tu máquina:**
+1. **Clona el repositorio en tu máquina:**
+
     ```bash
     git clone https://github.com/jpchavarria2/sistema-experto-automotriz.git
     ```
-2.  **Navega al directorio del proyecto:**
+
+2. **Navega al directorio del proyecto:**
+
     ```bash
     cd sistema-experto-automotriz
     ```
-3.  **Instala la dependencia `clipspy`:**
+
+3. **Instala la dependencia `clipspy`:**
+
     ```bash
     pip install clipspy
     ```  
@@ -52,9 +62,11 @@ El sistema utiliza reglas de inferencia CLIPS para generar un diagnóstico proba
 ## Uso
 
 1. Ejecutar `se_autos.py` con Python.
+
     ```bash
     python sd_autos.py
     ```  
+
 2. Seleccionar los síntomas que presenta el vehículo.  
 3. Pulsar el botón **Obtener Diagnóstico**.  
 4. Revisar el resultado en la sección **Resultado del Diagnóstico**.  
@@ -65,24 +77,28 @@ El sistema utiliza reglas de inferencia CLIPS para generar un diagnóstico proba
 ## Síntomas soportados
 
 ### Arranque y Eléctricos
+
 - El auto no enciende  
 - Se escucha un "clic" al arrancar  
 - No se escucha ningún sonido  
 - Luces del tablero tenues  
 
 ### Motor y Rendimiento
+
 - Aguja de temperatura alta  
 - Sale vapor del capó  
 - Luz de aceite encendida  
 - Golpeteo en el motor  
 
 ### Conducción y Frenos
+
 - Los frenos rechinan  
 - El volante tiembla  
 
 ---
 
 ## Base de Conocimiento (Reglas)
+
 El sistema puede identificar los siguientes problemas basándose en los síntomas:
 
 | Síntomas Seleccionados                               | Diagnóstico Potencial                 |
